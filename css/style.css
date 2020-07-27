@@ -1,9 +1,11 @@
 /*  Global */
 body {
+  background-color: #ececec;
   color: #f9eee2;
   margin: 0;
+  margin-bottom: 55px;
   padding: 0;
-  font: 12px/1.5 "Trebuchet MS", Helvetica, sans-serif;
+  font: 13px/1.5 "Trebuchet MS", Helvetica, sans-serif;
 }
 .container {
   width: 80%;
@@ -24,6 +26,20 @@ button {
 button:hover {
   background-color: rgba(205, 92, 92, 0.9);
 }
+.dark {
+  background-color: #182f53;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #f9eee2;
+  padding: 15px;
+  border-bottom: 5px solid indianred;
+}
+
+.highlight,
+.current a {
+  color: indianred;
+  font-weight: bold;
+}
 
 /* Header */
 header {
@@ -31,10 +47,7 @@ header {
   min-height: 70px;
   border-bottom: 5px solid indianred;
 }
-header .highlight {
-  color: indianred;
-  font-weight: bold;
-}
+
 header #logo h1 {
   float: left;
 }
@@ -87,6 +100,7 @@ header ul a:hover {
 #newsletter {
   background-color: #182f53;
   min-height: 60px;
+  border-bottom: 5px solid indianred;
 }
 
 #newsletter h1 {
@@ -119,9 +133,49 @@ a {
   height: 120px;
   width: 120px;
 }
+/* About: Main */
+#main {
+  color: black;
+}
+article#main-col {
+  float: left;
+  width: 65%;
+  font-size: 14px;
+}
+#main-col li {
+  font-size: 16px;
+  padding: 5px 0 5px 10px;
+}
+/* Sidebar */
+aside#sidebar {
+  margin: 5px;
+  float: right;
+  width: 30%;
+}
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+aside h3 {
+  margin: 5px 0 5px 0;
+}
 
 /* Footer */
 footer {
   background-color: #182f53;
   text-align: end;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 5px solid indianred;
+}
+
+/* Services */
+ul#services li {
+  float: left;
+  padding: 15px;
+  margin-bottom: 5px;
+  background-color: #eee9cf;
+  border: 1px solid #cccccc;
 }
