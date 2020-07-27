@@ -114,8 +114,12 @@ header ul a:hover {
   margin-bottom: 10px;
 }
 
-#newsletter input[type="text"] {
+#newsletter input[type="email"] {
   height: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 0;
+  padding-left: 2px;
 }
 
 #boxes {
@@ -149,6 +153,7 @@ article#main-col {
 /* Sidebar */
 aside#sidebar {
   margin: 5px;
+  margin-top: 46px;
   float: right;
   width: 30%;
 }
@@ -178,4 +183,51 @@ ul#services li {
   margin-bottom: 5px;
   background-color: #eee9cf;
   border: 1px solid #cccccc;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header #logo h1,
+  header nav,
+  header ul,
+  header li,
+  header h4,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar,
+  ul#services li,
+  .quote input,
+  .quote textarea {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 5px 0 5px;
+  }
+  header h4 {
+    display: inline;
+    padding: 5px;
+  }
+  #showcase h1 {
+    font-size: 35px;
+    width: 90%;
+  }
+  #newsletter button,
+  aside#sidebar button {
+    display: block;
+    width: 100%;
+  }
+  #newsletter form input[type="email"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .dark {
+    padding: 10px;
+  }
+  #showcase {
+    min-height: 300px;
+  }
 }
